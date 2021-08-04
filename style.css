@@ -1,0 +1,151 @@
+* {
+    font-family: 'Montserrat';
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    background: url("Assets/Background.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+#gradie {
+    width: 28vw;
+    height: 70vh;
+    border-radius: 7px 0 0 7px;
+    padding: 2.5vw 5vw 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #002e41;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#gradie p {
+    font-weight: 300;
+    color:#78b0c4;
+}
+#gradie img {
+    width: 28vw;
+    margin: 0;
+}
+
+#login {
+    width: 28vw;
+    height: 70vh;
+    border: 1.5px solid rgb(216, 215, 215);
+    border-radius: 0 7px 7px 0;
+    padding: 2.5vw 4vw;
+    box-sizing: border-box;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: space-between;
+}
+#checkbox {
+    display: flex;
+}
+.input {
+    height: 7vh;
+    padding-left: 2vw;
+    border-radius: 5px;
+    font-size: medium;
+    border: 1.5px solid rgb(216, 215, 215);
+}
+button {
+    height: 8vh;
+    border-radius: 5px;
+    background-color: #002e41;
+    color: white;
+    border: 0;
+    font-size: medium;
+    font-weight: 500;
+}
+a {
+    color:#002e41;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+#checkbox p {
+    font-weight: 500;
+    margin-left: 0.5vw;
+    line-height: 140%;
+}
+
+@media screen and (max-width: 800px){
+    body {
+        height: 100%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: none;
+        justify-content: none;
+    }
+    #gradie {
+        width: 100vw;
+        height: auto;
+        border-radius: 0;
+        padding: 6vh 5vh 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #002e41;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #gradie h1 {
+        font-weight: 600;
+    }
+    #gradie p {
+        margin: 2vh 0 6vh;
+    }
+    #gradie img {
+        width: 100vw;
+        margin: 0;
+    }
+
+
+    #login {
+        width: 100vw;
+        height: auto;
+        border: 0;
+        border-radius: 0;
+        padding: 5vh 8vh;
+        box-sizing: border-box;
+        background-color: white; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #login h1 {
+        font-weight: 700;
+    }
+    #login h4 {
+        margin: 3.5vh 0 1.5vh;
+    }
+    #checkbox {
+        margin: 3vh 0 3vh;
+    }
+    #checkbox p {
+        margin-left: 0.5vh;
+        line-height: 160%;
+    }
+    .input {
+        padding-left: 2vh;
+}
